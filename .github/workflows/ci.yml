@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check syntax
+        run: |
+          python -m py_compile 01_preprocess_csvs.py
+          python -m py_compile 04_run_analyses.py
+          python -m py_compile scripts/2020/nebraska_query.py
+          python -m py_compile scripts/2020/sensitivity.py
+          python -m py_compile scripts/2026/analyze_nebraska.py
+          python -m py_compile scripts/2026/compare_snapshots.py
