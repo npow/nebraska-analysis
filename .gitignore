@@ -1,0 +1,9 @@
+data/
+var/
+__pycache__/
+*.pyc
+*.jar
+*.log
+.env
+import.report
+results/raw_results_*.json

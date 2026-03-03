@@ -1,0 +1,433 @@
+{
+  "total": 2244,
+  "total_reach": 2025197237,
+  "top_packages": [
+    {
+      "name": "supports-color",
+      "repos": 5765200,
+      "pkgs": 4053,
+      "amp": 1422.1,
+      "owner": "chalk",
+      "maintainers": 1
+    },
+    {
+      "name": "fs.realpath",
+      "repos": 5532257,
+      "pkgs": 2476,
+      "amp": 2233.5,
+      "owner": "isaacs",
+      "maintainers": 1
+    },
+    {
+      "name": "fill-range",
+      "repos": 5461792,
+      "pkgs": 2299,
+      "amp": 2374.7,
+      "owner": "jonschlinkert",
+      "maintainers": 4
+    },
+    {
+      "name": "to-regex-range",
+      "repos": 5300496,
+      "pkgs": 2203,
+      "amp": 2404.9,
+      "owner": "micromatch",
+      "maintainers": 2
+    },
+    {
+      "name": "fsevents",
+      "repos": 5289351,
+      "pkgs": 5083,
+      "amp": 1040.4,
+      "owner": "fsevents",
+      "maintainers": 2
+    },
+    {
+      "name": "statuses",
+      "repos": 5106018,
+      "pkgs": 2199,
+      "amp": 2320.9,
+      "owner": "jshttp",
+      "maintainers": 4
+    },
+    {
+      "name": "setprototypeof",
+      "repos": 5068682,
+      "pkgs": 1763,
+      "amp": 2873.4,
+      "owner": "wesleytodd",
+      "maintainers": 1
+    },
+    {
+      "name": "unpipe",
+      "repos": 5053604,
+      "pkgs": 1163,
+      "amp": 4341.6,
+      "owner": "stream-utils",
+      "maintainers": 1
+    },
+    {
+      "name": "fresh",
+      "repos": 5019855,
+      "pkgs": 1541,
+      "amp": 3255.4,
+      "owner": "jshttp",
+      "maintainers": 2
+    },
+    {
+      "name": "send",
+      "repos": 4993661,
+      "pkgs": 2106,
+      "amp": 2370.0,
+      "owner": "pillarjs",
+      "maintainers": 4
+    },
+    {
+      "name": "fast-deep-equal",
+      "repos": 4968905,
+      "pkgs": 4389,
+      "amp": 1131.9,
+      "owner": "epoberezkin",
+      "maintainers": 1
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "repos": 4957551,
+      "pkgs": 2347,
+      "amp": 2111.4,
+      "owner": "epoberezkin",
+      "maintainers": 1
+    },
+    {
+      "name": "utils-merge",
+      "repos": 4948638,
+      "pkgs": 1591,
+      "amp": 3108.4,
+      "owner": "jaredhanson",
+      "maintainers": 1
+    },
+    {
+      "name": "finalhandler",
+      "repos": 4946523,
+      "pkgs": 2033,
+      "amp": 2431.9,
+      "owner": "pillarjs",
+      "maintainers": 3
+    },
+    {
+      "name": "readdirp",
+      "repos": 4905460,
+      "pkgs": 1914,
+      "amp": 2561.6,
+      "owner": "paulmillr",
+      "maintainers": 2
+    },
+    {
+      "name": "uri-js",
+      "repos": 4745435,
+      "pkgs": 1923,
+      "amp": 2466.4,
+      "owner": "garycourt",
+      "maintainers": 1
+    },
+    {
+      "name": "to-fast-properties",
+      "repos": 4631839,
+      "pkgs": 1647,
+      "amp": 2810.6,
+      "owner": "sindresorhus",
+      "maintainers": 1
+    },
+    {
+      "name": "jsesc",
+      "repos": 4543338,
+      "pkgs": 2094,
+      "amp": 2168.7,
+      "owner": "mathiasbynens",
+      "maintainers": 1
+    },
+    {
+      "name": "etag",
+      "repos": 4534857,
+      "pkgs": 2013,
+      "amp": 2251.7,
+      "owner": "jshttp",
+      "maintainers": 3
+    },
+    {
+      "name": "destroy",
+      "repos": 4522290,
+      "pkgs": 1337,
+      "amp": 3379.9,
+      "owner": "stream-utils",
+      "maintainers": 2
+    },
+    {
+      "name": "wrap-ansi",
+      "repos": 4485420,
+      "pkgs": 2301,
+      "amp": 1948.5,
+      "owner": "chalk",
+      "maintainers": 1
+    },
+    {
+      "name": "cliui",
+      "repos": 4471191,
+      "pkgs": 2055,
+      "amp": 2174.7,
+      "owner": "yargs",
+      "maintainers": 2
+    },
+    {
+      "name": "vary",
+      "repos": 4406042,
+      "pkgs": 1385,
+      "amp": 3179.0,
+      "owner": "jshttp",
+      "maintainers": 3
+    },
+    {
+      "name": "yargs-parser",
+      "repos": 4384968,
+      "pkgs": 3976,
+      "amp": 1102.6,
+      "owner": "yargs",
+      "maintainers": 3
+    },
+    {
+      "name": "toidentifier",
+      "repos": 4368444,
+      "pkgs": 1502,
+      "amp": 2906.5,
+      "owner": "component",
+      "maintainers": 4
+    },
+    {
+      "name": "get-caller-file",
+      "repos": 4350442,
+      "pkgs": 1826,
+      "amp": 2381.2,
+      "owner": "stefanpenner",
+      "maintainers": 1
+    },
+    {
+      "name": "require-directory",
+      "repos": 4338986,
+      "pkgs": 2217,
+      "amp": 1956.3,
+      "owner": "troygoode",
+      "maintainers": 1
+    },
+    {
+      "name": "sax",
+      "repos": 4312111,
+      "pkgs": 1856,
+      "amp": 2322.1,
+      "owner": "isaacs",
+      "maintainers": 1
+    },
+    {
+      "name": "convert-source-map",
+      "repos": 4241143,
+      "pkgs": 2395,
+      "amp": 1770.1,
+      "owner": "thlorenz",
+      "maintainers": 2
+    },
+    {
+      "name": "isobject",
+      "repos": 4238246,
+      "pkgs": 1866,
+      "amp": 2270.1,
+      "owner": "jonschlinkert",
+      "maintainers": 3
+    },
+    {
+      "name": "content-disposition",
+      "repos": 4222637,
+      "pkgs": 1185,
+      "amp": 3560.4,
+      "owner": "jshttp",
+      "maintainers": 3
+    },
+    {
+      "name": "emoji-regex",
+      "repos": 4193583,
+      "pkgs": 2426,
+      "amp": 1727.9,
+      "owner": "mathiasbynens",
+      "maintainers": 2
+    },
+    {
+      "name": "source-map-resolve",
+      "repos": 4169843,
+      "pkgs": 1036,
+      "amp": 4021.1,
+      "owner": "lydell",
+      "maintainers": 1
+    },
+    {
+      "name": "methods",
+      "repos": 4125259,
+      "pkgs": 1452,
+      "amp": 2839.1,
+      "owner": "jshttp",
+      "maintainers": 6
+    },
+    {
+      "name": "cookie-signature",
+      "repos": 4104495,
+      "pkgs": 1056,
+      "amp": 3883.2,
+      "owner": "tj",
+      "maintainers": 3
+    },
+    {
+      "name": "array-flatten",
+      "repos": 4097259,
+      "pkgs": 1118,
+      "amp": 3661.5,
+      "owner": "blakeembrey",
+      "maintainers": 1
+    },
+    {
+      "name": "ipaddr.js",
+      "repos": 4086426,
+      "pkgs": 1055,
+      "amp": 3869.7,
+      "owner": "whitequark",
+      "maintainers": 1
+    },
+    {
+      "name": "forwarded",
+      "repos": 4075117,
+      "pkgs": 622,
+      "amp": 6541.1,
+      "owner": "jshttp",
+      "maintainers": 3
+    },
+    {
+      "name": "repeat-string",
+      "repos": 4068394,
+      "pkgs": 1219,
+      "amp": 3334.7,
+      "owner": "jonschlinkert",
+      "maintainers": 2
+    },
+    {
+      "name": "merge-descriptors",
+      "repos": 4062436,
+      "pkgs": 954,
+      "amp": 4253.9,
+      "owner": "sindresorhus",
+      "maintainers": 1
+    },
+    {
+      "name": "proxy-addr",
+      "repos": 4050584,
+      "pkgs": 849,
+      "amp": 4765.4,
+      "owner": "jshttp",
+      "maintainers": 1
+    },
+    {
+      "name": "electron-to-chromium",
+      "repos": 4040409,
+      "pkgs": 1696,
+      "amp": 2380.9,
+      "owner": "Kilian",
+      "maintainers": 1
+    },
+    {
+      "name": "caniuse-lite",
+      "repos": 4039789,
+      "pkgs": 2698,
+      "amp": 1496.8,
+      "owner": "browserslist",
+      "maintainers": 3
+    },
+    {
+      "name": "regjsparser",
+      "repos": 4011433,
+      "pkgs": 1155,
+      "amp": 3470.1,
+      "owner": "jviereck",
+      "maintainers": 1
+    },
+    {
+      "name": "regexpu-core",
+      "repos": 4004137,
+      "pkgs": 1185,
+      "amp": 3376.2,
+      "owner": "mathiasbynens",
+      "maintainers": 4
+    },
+    {
+      "name": "set-blocking",
+      "repos": 3960025,
+      "pkgs": 1222,
+      "amp": 3238.0,
+      "owner": "yargs",
+      "maintainers": 1
+    },
+    {
+      "name": "for-in",
+      "repos": 3955204,
+      "pkgs": 1046,
+      "amp": 3777.7,
+      "owner": "jonschlinkert",
+      "maintainers": 2
+    },
+    {
+      "name": "repeat-element",
+      "repos": 3941861,
+      "pkgs": 990,
+      "amp": 3977.7,
+      "owner": "jonschlinkert",
+      "maintainers": 1
+    },
+    {
+      "name": "extglob",
+      "repos": 3940381,
+      "pkgs": 981,
+      "amp": 4012.6,
+      "owner": "micromatch",
+      "maintainers": 2
+    },
+    {
+      "name": "aproba",
+      "repos": 3902120,
+      "pkgs": 679,
+      "amp": 5738.4,
+      "owner": "iarna",
+      "maintainers": 1
+    }
+  ],
+  "owner_counts": {
+    "sindresorhus": 155,
+    "jonschlinkert": 78,
+    "npm": 55,
+    "lodash": 50,
+    "csstools": 44,
+    "firebase": 43,
+    "evanw": 42,
+    "inspect-js": 40,
+    "cssnano": 37,
+    "wooorm": 35,
+    "gulpjs": 35,
+    "unknown": 31,
+    "jimp-dev": 31,
+    "kevva": 29,
+    "es-shims": 28,
+    "browserify": 27,
+    "jestjs": 25,
+    "isaacs": 24,
+    "aws": 23,
+    "syntax-tree": 22,
+    "expo": 22,
+    "ljharb": 21,
+    "mafintosh": 19,
+    "blakeembrey": 18,
+    "pugjs": 18
+  }
+}
