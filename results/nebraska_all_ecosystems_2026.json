@@ -1,0 +1,260 @@
+{
+  "snapshot": "ecosyste.ms February 2026",
+  "generated": "2026-03-03",
+  "note": "Nebraska block = package with high transitive reach relative to direct dependency visibility. Thresholds scaled per ecosystem size and dependency model.",
+  "ecosystems": {
+    "npm": {
+      "blocks": 2244,
+      "thresholds": {"amp": 1000, "min_repos": 50000},
+      "total_reach": 2000000000,
+      "peak_amp": 10000,
+      "top_packages": [
+        {"name": "ms", "repos": 6610614, "amp": 9350, "owner": "vercel", "maintainers": 1},
+        {"name": "inherits", "repos": 6462601, "amp": 8927, "owner": "npm", "maintainers": 1}
+      ],
+      "character": "Individual open-source authors (sindresorhus, jonschlinkert). Utility micro-packages."
+    },
+    "go": {
+      "blocks": 122,
+      "thresholds": {"amp": 100, "min_repos": 5000},
+      "total_reach": 2578909,
+      "peak_amp": 2214,
+      "top_packages": [
+        {"name": "rsc.io/sampler", "repos": 86657, "amp": 183, "owner": "rsc"},
+        {"name": "rsc.io/quote/v3", "repos": 85240, "amp": 237, "owner": "rsc"}
+      ],
+      "character": "Go core team (Russ Cox, Ian Lance Taylor, Dmitri Shuralyov). Tutorial packages that escaped into production."
+    },
+    "rubygems": {
+      "blocks": 245,
+      "thresholds": {"amp": 1000, "min_repos": 5000},
+      "total_reach": null,
+      "peak_amp": 145628,
+      "top_packages": [
+        {"name": "bindex",                    "repos": 291257,  "amp": 145628, "owner": "gsamokovarov",  "maintainers": 1, "stars": 18,   "note": "Stack frame binding - pulled in by better_errors"},
+        {"name": "sass-listen",               "repos": 548808,  "amp": 137202, "owner": "sass",          "maintainers": 2, "stars": 7,    "note": "File watcher for sass compiler"},
+        {"name": "github-pages-health-check", "repos": 327416,  "amp": 81854,  "owner": "github",        "maintainers": 1, "stars": 150,  "note": "GitHub Pages toolchain"},
+        {"name": "jekyll-swiss",              "repos": 319381,  "amp": 79845,  "owner": null,            "maintainers": 1, "stars": null, "note": "Jekyll theme pulled by GitHub Pages"},
+        {"name": "jekyll-theme-cayman",       "repos": 318980,  "amp": 79745,  "owner": "pages-themes",  "maintainers": 1, "stars": 1311, "note": "Jekyll theme pulled by GitHub Pages"}
+      ],
+      "character": "Jekyll/GitHub Pages gem chain. Individual maintainers holding gems with 0-18 stars but 300-550K dependent repos. Highest peak amplification of any non-Actions ecosystem (145,628x)."
+    },
+    "cargo": {
+      "blocks": 311,
+      "thresholds": {"amp": 500, "min_repos": 2000},
+      "total_reach": null,
+      "peak_amp": 25672,
+      "top_packages": [
+        {"name": "winapi-x86_64-pc-windows-gnu", "repos": 102690, "amp": 25672, "owner": "retep998",       "maintainers": 1, "stars": 1920, "note": "Windows x64 API bindings helper crate"},
+        {"name": "winapi-i686-pc-windows-gnu",   "repos": 102690, "amp": 25672, "owner": "retep998",       "maintainers": 1, "stars": 1920, "note": "Windows x86 API bindings helper crate"},
+        {"name": "wasm-bindgen-macro",            "repos": 54075,  "amp": 18025, "owner": "wasm-bindgen",   "maintainers": 2, "stars": 8745, "note": "Proc macro for wasm-bindgen"},
+        {"name": "proc-macro-error-attr",         "repos": 35623,  "amp": 17811, "owner": "CreepySkeleton", "maintainers": 1, "stars": 14,   "note": "Proc macro error helper - 14 stars, 35K repos"},
+        {"name": "windows_i686_gnu",              "repos": 56593,  "amp": 14148, "owner": "microsoft",      "maintainers": 1, "stars": 9853, "note": "Microsoft Windows target crate"}
+      ],
+      "character": "Platform target crates (winapi-*, windows_*) by a single maintainer (retep998) holding Windows ecosystem. Proc macro helper crates with tiny star counts but massive reach."
+    },
+    "pypi": {
+      "blocks": 195,
+      "thresholds": {"amp": 200, "min_repos": 2000},
+      "total_reach": null,
+      "peak_amp": 25742,
+      "top_packages": [
+        {"name": "django-heroku",   "repos": 25742,  "amp": 25742, "owner": "heroku",         "maintainers": 1, "stars": 454, "note": "Deprecated Heroku config helper - 0 dependent packages"},
+        {"name": "itypes",          "repos": 26233,  "amp": 4372,  "owner": "PavanTatikonda",  "maintainers": 2, "stars": 19,  "note": "Basic type objects for REST frameworks"},
+        {"name": "wsgiref",         "repos": 52027,  "amp": 3468,  "owner": null,              "maintainers": 1, "stars": null,"note": "Python stdlib WSGI reference - packaged separately on PyPI"},
+        {"name": "django-toolbelt", "repos": 4051,   "amp": 4051,  "owner": null,              "maintainers": 1, "stars": null,"note": "Heroku's Django deployment bundle"},
+        {"name": "static3",         "repos": 8675,   "amp": 2891,  "owner": "rmohr",           "maintainers": 1, "stars": 30,  "note": "Static file server"}
+      ],
+      "character": "Deprecated deployment packages (django-heroku, django-toolbelt) that Heroku's tutorials spread into production. Standard library modules re-packaged (wsgiref)."
+    },
+    "maven": {
+      "blocks": 106,
+      "thresholds": {"amp": 100, "min_repos": 1000},
+      "total_reach": null,
+      "peak_amp": 7686,
+      "top_packages": [
+        {"name": "com.facebook.react:hermes-android", "repos": 7686,  "amp": 7686, "owner": "facebook",  "stars": 124273, "note": "Hermes JS engine for React Native Android"},
+        {"name": "com.facebook.react:react-android",  "repos": 7692,  "amp": 3846, "owner": "facebook",  "stars": 124273, "note": "React Native Android runtime"},
+        {"name": "com.firebaseui:firebase-ui-database","repos": 3014,  "amp": 1507, "owner": "firebase",  "stars": 4749,   "note": "Firebase UI components"},
+        {"name": "org.thymeleaf.extras:thymeleaf-extras-springsecurity6", "repos": 3691, "amp": 922, "owner": "thymeleaf", "stars": 2920, "note": "Spring Security + Thymeleaf integration"}
+      ],
+      "character": "React Native (Facebook/Meta) and Spring Boot (Pivotal/VMware) sub-artifacts. Lower amplification than other ecosystems — Maven's explicit POM declarations compress ratios."
+    },
+    "packagist": {
+      "blocks": 105,
+      "thresholds": {"amp": 500, "min_repos": 3000},
+      "total_reach": null,
+      "peak_amp": 29491,
+      "top_packages": [
+        {"name": "facade/flare-client-php",            "repos": 206438, "amp": 29491, "owner": "facade",            "maintainers": 1, "stars": 514,  "note": "Error reporting client"},
+        {"name": "theseer/tokenizer",                  "repos": 453841, "amp": 28365, "owner": "theseer",           "maintainers": 1, "stars": 5119, "note": "PHP tokenizer - pulled by PHPUnit"},
+        {"name": "graham-campbell/result-type",        "repos": 145825, "amp": 24304, "owner": "GrahamCampbell",    "maintainers": 1, "stars": 465,  "note": "Result type abstraction"},
+        {"name": "sebastian/code-unit-reverse-lookup", "repos": 493265, "amp": 19730, "owner": "sebastianbergmann", "maintainers": 1, "stars": 6653, "note": "PHPUnit internal - Sebastian Bergmann"},
+        {"name": "sebastian/resource-operations",      "repos": 489045, "amp": 19561, "owner": "sebastianbergmann", "maintainers": 1, "stars": 6260, "note": "PHPUnit internal - Sebastian Bergmann"}
+      ],
+      "character": "Sebastian Bergmann (PHPUnit author) is the PHP sindresorhus. Multiple sebastian/* packages with 400-500K dependent repos, each with 1 maintainer. The entire PHP testing ecosystem routes through one person."
+    },
+    "actions": {
+      "blocks": 306,
+      "thresholds": {"amp": 100, "min_repos": 1000},
+      "total_reach": null,
+      "peak_amp": 1334666,
+      "top_packages": [
+        {"name": "actions/checkout",        "repos": 1334666, "amp": 1334666, "owner": "actions", "stars": 6775, "note": "Used by virtually every GitHub Actions workflow"},
+        {"name": "actions/setup-node",      "repos": 378447,  "amp": 378447,  "owner": "actions", "stars": 4422, "note": "Node.js setup action"},
+        {"name": "actions/upload-artifact", "repos": 263491,  "amp": 263491,  "owner": "actions", "stars": 3824, "note": "Artifact upload"},
+        {"name": "actions/setup-python",    "repos": 238332,  "amp": 238332,  "owner": "actions", "stars": 1988, "note": "Python setup action"},
+        {"name": "actions/cache",           "repos": 216977,  "amp": 216977,  "owner": "actions", "stars": 5073, "note": "Dependency caching"}
+      ],
+      "character": "Special case: the actions ecosystem has virtually no action-to-action dependencies, so amplification equals dependent_repos_count directly. GitHub's own actions/* org controls the most critical actions. Peak amp of 1,334,666x is an artifact of the flat dependency model, not vulnerability."
+    },
+    "pub": {
+      "blocks": 233,
+      "thresholds": {"amp": 100, "min_repos": 1000},
+      "total_reach": null,
+      "peak_amp": 76317,
+      "top_packages": [
+        {"name": "sky_engine",           "repos": 228951, "amp": 76317, "owner": null,      "maintainers": 0, "stars": null, "note": "Flutter rendering engine (Google internal)"},
+        {"name": "boolean_selector",     "repos": 231744, "amp": 23174, "owner": "dart-lang","maintainers": 0, "stars": 81,   "note": "Dart pub test selector syntax"},
+        {"name": "path_provider_macos",  "repos": 50091,  "amp": 10018, "owner": "flutter",  "maintainers": 0, "stars": 17632,"note": "Flutter filesystem paths plugin"},
+        {"name": "term_glyph",           "repos": 233558, "amp": 9342,  "owner": "dart-lang","maintainers": 0, "stars": 90,   "note": "Unicode glyph rendering for Dart"},
+        {"name": "path_provider_linux",  "repos": 67118,  "amp": 8389,  "owner": "flutter",  "maintainers": 0, "stars": 4994, "note": "Flutter filesystem paths plugin (Linux)"}
+      ],
+      "character": "Flutter/Dart SDK internals. Google's own SDK packages (sky_engine, dart-lang org, flutter org) dominate — the same pattern as Go, where the language team's packages are load-bearing infrastructure. Maintainer count is 0 for all (Google-internal authorship not exposed via pub.dev)."
+    },
+    "cocoapods": {
+      "blocks": 94,
+      "thresholds": {"amp": 100, "min_repos": 500},
+      "total_reach": null,
+      "peak_amp": 71526,
+      "top_packages": [
+        {"name": "Folly",             "repos": 71526, "amp": 71526, "owner": "facebook",            "maintainers": 1, "stars": 29975, "note": "Facebook's C++ utility library - pulled by React Native"},
+        {"name": "Flipper",           "repos": 34784, "amp": 34784, "owner": "facebook",            "maintainers": 1, "stars": 13428, "note": "Facebook's mobile debugger"},
+        {"name": "Flipper-PeerTalk",  "repos": 34780, "amp": 34780, "owner": "priteshrnandgaonkar", "maintainers": 1, "stars": 1,     "note": "Flipper USB transport - 1 star, 35K repos"},
+        {"name": "React-Core",        "repos": 89950, "amp": 29983, "owner": "sjnscythe",           "maintainers": 1, "stars": 0,     "note": "React Native core pod"},
+        {"name": "Flipper-RSocket",   "repos": 34763, "amp": 17381, "owner": "rsocket",             "maintainers": 1, "stars": 256,   "note": "Flipper networking transport"}
+      ],
+      "character": "React Native (Facebook/Meta) dragging in C++ dependencies. Folly and Flipper are Facebook's internal tools that every React Native iOS app installs. Flipper-PeerTalk: 1 star, 35,000 repos."
+    },
+    "nuget": {
+      "blocks": 52,
+      "thresholds": {"amp": 50, "min_repos": 500},
+      "total_reach": null,
+      "peak_amp": 1201,
+      "top_packages": [
+        {"name": "coverlet.collector", "repos": 70899, "amp": 1201, "owner": "coverlet-coverage", "maintainers": 4, "stars": 2892, "note": "Code coverage - pulled by dotnet test template"},
+        {"name": "microsoft.visualstudio.debugger.contracts", "repos": 2402, "amp": 1201, "owner": null, "maintainers": 2, "stars": null, "note": "VS debugger contracts (Microsoft)"}
+      ],
+      "character": "Lowest peak amplification of any ecosystem (1,201x). .NET's NuGet has stricter explicit dependency declaration. Microsoft packages and dotnet test tooling dominate."
+    },
+    "bower": {
+      "blocks": 206,
+      "thresholds": {"amp": 100, "min_repos": 1000},
+      "total_reach": null,
+      "peak_amp": 24783,
+      "top_packages": [
+        {"name": "punycode",       "repos": 24783, "amp": 24783, "owner": "mathiasbynens", "maintainers": 0, "stars": 1647, "note": "IDN domain encoding - mathias bynens (also in npm)"},
+        {"name": "source-map-url", "repos": 18922, "amp": 18922, "owner": "lydell",        "maintainers": 0, "stars": 40,   "note": "Source map URL extraction"},
+        {"name": "resolve-url",    "repos": 18924, "amp": 9462,  "owner": "lydell",        "maintainers": 0, "stars": 54,   "note": "URL resolution utility"}
+      ],
+      "character": "Deprecated (Bower was sunset in 2017). The Nebraska layer is frozen — nobody is removing these dependencies because nothing is actively maintained. mathiasbynens appears here too (same as npm)."
+    },
+    "conda": {
+      "blocks": 245,
+      "thresholds": {"amp": 100, "min_repos": 200},
+      "total_reach": null,
+      "peak_amp": 2021,
+      "top_packages": [
+        {"name": "matplotlib",       "repos": 10108, "amp": 2021, "owner": "matplotlib",      "stars": 21917, "note": "Most widely depended-on data viz library"},
+        {"name": "pytest-cov",       "repos": 1136,  "amp": 1136, "owner": "pytest-dev",      "stars": 1961,  "note": "Coverage plugin pulled by pytest template"},
+        {"name": "ca-certificates",  "repos": 3409,  "amp": 852,  "owner": "curl",            "stars": 39671, "note": "SSL certificate bundle (curl project)"},
+        {"name": "pip",              "repos": 13266, "amp": 780,  "owner": "pypa",            "stars": 9965,  "note": "pip inside conda — package manager inception"}
+      ],
+      "character": "Data science toolchain. matplotlib and pip show up here as transitive deps of nearly every conda environment. pip inside conda (780x) is the clearest example of package manager inception."
+    },
+    "hex": {
+      "blocks": 38,
+      "thresholds": {"amp": 100, "min_repos": 100},
+      "total_reach": null,
+      "peak_amp": 2185,
+      "top_packages": [
+        {"name": "phoenix_live_reload", "repos": 17487, "amp": 2185, "owner": "phoenixframework", "maintainers": 2, "stars": 315, "note": "Phoenix Framework's live reload dev dependency"},
+        {"name": "unicode_util_compat", "repos": 4828,  "amp": 1207, "owner": "benoitc",          "maintainers": 1, "stars": 10,  "note": "Unicode compatibility (benoît chesneau)"},
+        {"name": "metrics",            "repos": 6548,  "amp": 1091, "owner": "benoitc",          "maintainers": 1, "stars": 70,  "note": "Metrics collection"},
+        {"name": "mimerl",             "repos": 7317,  "amp": 914,  "owner": "benoitc",          "maintainers": 1, "stars": 28,  "note": "MIME type library"},
+        {"name": "idna",               "repos": 8835,  "amp": 519,  "owner": "benoitc",          "maintainers": 1, "stars": 43,  "note": "Internationalized domain names"}
+      ],
+      "character": "Benoît Chesneau (benoitc) is the Elixir sindresorhus — 4 packages in the top 5, each with 1 maintainer. The Erlang/Elixir HTTP and networking stack routes through one person."
+    },
+    "hackage": {
+      "blocks": 426,
+      "thresholds": {"amp": 50, "min_repos": 100},
+      "total_reach": null,
+      "peak_amp": 368,
+      "top_packages": [
+        {"name": "hspec-wai-json", "repos": 368,  "amp": 368,  "owner": "hspec",          "maintainers": 1, "note": "WAI JSON testing helper"},
+        {"name": "tasty-hspec",    "repos": 349,  "amp": 349,  "owner": "mitchellwrosen", "maintainers": 3, "note": "hspec integration for tasty"},
+        {"name": "happy",          "repos": 334,  "amp": 334,  "owner": null,             "maintainers": 6, "note": "Haskell parser generator"},
+        {"name": "doctest",        "repos": 1354, "amp": 270,  "owner": "sol",            "maintainers": 7, "note": "Doctest for Haskell"}
+      ],
+      "character": "Very low amplification (max 368x) and small absolute numbers — Haskell's ecosystem is small and explicit. Testing infrastructure (hspec, tasty) dominates."
+    },
+    "clojars": {
+      "blocks": 130,
+      "thresholds": {"amp": 50, "min_repos": 50},
+      "total_reach": null,
+      "peak_amp": 35997,
+      "top_packages": [
+        {"name": "org.clojure/clojure",      "repos": 35997, "amp": 35997, "owner": "clojure",    "stars": 10745, "note": "The Clojure runtime itself — every Clojure project depends on it"},
+        {"name": "ring/ring-defaults",       "repos": 3988,  "amp": 3988,  "owner": "ring-clojure","stars": 349,   "note": "Ring HTTP defaults"},
+        {"name": "ring/ring-jetty-adapter",  "repos": 3983,  "amp": 3983,  "owner": "ring-clojure","stars": 3831,  "note": "Ring Jetty server adapter"},
+        {"name": "ring/ring-core",           "repos": 3472,  "amp": 3472,  "owner": "ring-clojure","stars": 3841,  "note": "Ring HTTP library core"}
+      ],
+      "character": "org.clojure/clojure is the language runtime — it shows up as a Nebraska block because projects depend on it directly but list almost no transitive packages. Ring HTTP stack dominates the rest."
+    },
+    "cran": {
+      "blocks": 0,
+      "thresholds": {"amp": 50, "min_repos": 200},
+      "note": "R has no Nebraska layer. Max amplification across all CRAN packages is ~45x. R's DESCRIPTION file convention — strict Depends/Imports fields enforced by CRAN policy — means every dependency is explicitly declared. The amplification ratio stays flat by design."
+    }
+  },
+  "cross_ecosystem_summary": {
+    "peak_amp_by_ecosystem": {
+      "actions":   1334666,
+      "rubygems":  145628,
+      "pub":       76317,
+      "cocoapods": 71526,
+      "clojars":   35997,
+      "cargo":     25672,
+      "pypi":      25742,
+      "packagist": 29491,
+      "bower":     24783,
+      "npm":       10000,
+      "maven":     7686,
+      "hex":       2185,
+      "conda":     2021,
+      "go":        2214,
+      "nuget":     1201,
+      "hackage":   368,
+      "cran":      45
+    },
+    "who_holds_it": {
+      "npm":       "Individual open-source authors (sindresorhus, jonschlinkert)",
+      "go":        "Go core team (Russ Cox, Ian Lance Taylor, Dmitri Shuralyov)",
+      "rubygems":  "Individual gem authors + GitHub Pages toolchain",
+      "cargo":     "Single maintainer (retep998) owns Windows platform target crates",
+      "pypi":      "Deprecated deployment packages (Heroku), stdlib re-packaged",
+      "maven":     "Facebook/Meta (React Native), Spring ecosystem (Pivotal/VMware)",
+      "packagist": "Sebastian Bergmann (PHPUnit) — the PHP sindresorhus",
+      "actions":   "GitHub itself (actions/* org) — structurally different risk profile",
+      "pub":       "Google/Flutter SDK team (dart-lang org, flutter org)",
+      "cocoapods": "Facebook/Meta (React Native iOS dependencies: Folly, Flipper)",
+      "nuget":     "Microsoft + test tooling (coverlet)",
+      "bower":     "Frozen ecosystem — mathiasbynens, lydell",
+      "conda":     "Scientific Python stack (matplotlib, pytest-dev, pypa)",
+      "hex":       "benoît chesneau (benoitc) — 4 packages in top 5",
+      "clojars":   "Clojure core team + Ring HTTP library",
+      "cran":      "N/A — no Nebraska pattern"
+    }
+  }
+}
