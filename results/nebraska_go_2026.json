@@ -1,0 +1,50 @@
+{
+  "ecosystem": "go",
+  "snapshot": "ecosyste.ms February 2026",
+  "thresholds": {
+    "amplification": 100,
+    "min_repos": 5000,
+    "note": "Go thresholds are lower than npm (1000x/50K) to account for ecosystem size difference. Go modules are more explicitly listed in go.mod, compressing amplification ratios."
+  },
+  "total": 122,
+  "total_reach": 2578909,
+  "top_packages": [
+    {"name": "github.com/jellevandenhooff/dkim",                 "repos": 8855,   "amp": 2214, "owner": "jellevandenhooff", "stars": 9,   "note": "DKIM email auth"},
+    {"name": "github.com/jmespath/go-jmespath/internal/testify", "repos": 41730,  "amp": 1814, "owner": "jmespath",         "stars": 608, "note": "INTERNAL package depended on externally — test helper inside go-jmespath's internal/ dir"},
+    {"name": "github.com/jackc/pgproto3",                        "repos": 17816,  "amp": 1114, "owner": "jackc",            "stars": 168, "note": "PostgreSQL wire protocol — superseded by pgx v5"},
+    {"name": "dmitri.shuralyov.com/gpu/mtl",                     "repos": 102955, "amp": 664,  "owner": "shurcooL",         "stars": null,"note": "Metal GPU API bindings by Go contributor Dmitri Shuralyov"},
+    {"name": "gopkg.in/errgo.v2",                                "repos": 141521, "amp": 640,  "owner": "go-errgo",         "stars": 53,  "note": "Error handling library"},
+    {"name": "github.com/huin/goutil",                           "repos": 7241,   "amp": 658,  "owner": "huin",             "stars": 2,   "note": "Unmaintained utility library"},
+    {"name": "rsc.io/binaryregexp",                              "repos": 102090, "amp": 510,  "owner": "rsc",              "stars": 48,  "note": "Regexp for binary/latin-1 data by Russ Cox (Go lead)"},
+    {"name": "rsc.io/quote/v3",                                  "repos": 85240,  "amp": 237,  "owner": "rsc",              "stars": 108, "note": "Tutorial package ('pithy sayings') used in official Go modules docs — spread via copy-paste from examples"},
+    {"name": "rsc.io/sampler",                                   "repos": 86657,  "amp": 183,  "owner": "rsc",              "stars": 9,   "note": "Tutorial package ('shows simple texts') from official Go modules tutorial"},
+    {"name": "github.com/BurntSushi/xgb",                        "repos": 109272, "amp": 219,  "owner": "BurntSushi",       "stars": 508, "note": "X11 protocol bindings by Andrew Gallant (ripgrep author)"},
+    {"name": "github.com/ianlancetaylor/demangle",               "repos": 90975,  "amp": 214,  "owner": "ianlancetaylor",   "stars": 177, "note": "C++ symbol demangling by Ian Lance Taylor (Go compiler team)"},
+    {"name": "github.com/google/martian",                        "repos": 112722, "amp": 120,  "owner": "google",           "stars": 2034,"note": "HTTP proxy for testing (legacy module path — v3 coexists)"},
+    {"name": "github.com/hashicorp/go.net",                      "repos": 58111,  "amp": 593,  "owner": "hashicorp",        "stars": 18,  "note": "Deprecated wrapper for golang.org/x/net, still pulled in transitively"},
+    {"name": "github.com/google/renameio",                       "repos": 120047, "amp": 275,  "owner": "google",           "stars": 659, "note": "Atomic file rename utility"},
+    {"name": "github.com/hashicorp/consul/sdk",                  "repos": 66830,  "amp": 179,  "owner": "hashicorp",        "stars": 29462,"note": "Consul SDK sub-package"}
+  ],
+  "owner_counts": {
+    "googleapis": 51,
+    "gobuffalo": 5,
+    "rsc": 4,
+    "google": 4,
+    "shurcooL": 4,
+    "jackc": 3,
+    "hashicorp": 3,
+    "containerd": 3,
+    "influxdata": 3,
+    "quasilyte": 2,
+    "mitchellh": 2,
+    "d2g": 2,
+    "cznic": 2
+  },
+  "key_findings": {
+    "vs_npm": "Go Nebraska blocks are 100-2000x amplification vs npm's 1000-10000x. Go's explicit go.mod makes transitive packages more visible, compressing ratios. Ecosystem is ~15x smaller by repo count.",
+    "tutorial_creep": "rsc.io/sampler and rsc.io/quote/v3 are official Go modules tutorial packages written by Russ Cox (Go lead) that spread into production codebases via copy-paste from examples. Combined 171K repos, 9-108 stars.",
+    "go_core_team": "Packages from Go core team members dominate: Russ Cox (rsc.io/*), Ian Lance Taylor (ianlancetaylor/demangle), Dmitri Shuralyov (dmitri.shuralyov.com/*). Personal domain packages by the people who built Go are now load-bearing infrastructure.",
+    "internal_package_problem": "github.com/jmespath/go-jmespath/internal/testify is an internal/ package (meant to be unexportable) that 41K repos depend on, likely via indirect dependency chains that pre-date Go modules enforcement.",
+    "deprecated_packages": "github.com/hashicorp/go.net (deprecated wrapper for golang.org/x/net) still runs in 58K repos at 593x amplification — same collapse pattern as npm's request ecosystem, but slower."
+  }
+}
