@@ -1,7 +1,7 @@
 # libraries-analysis
 
 [![CI](https://github.com/npow/libraries-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/npow/libraries-analysis/actions/workflows/ci.yml)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE) [![Docs](https://img.shields.io/badge/docs-mintlify-18a34a?style=flat-square)](https://mintlify.com/npow/nebraska-analysis)
 
 Find the packages your entire supply chain depends on without knowing it.
 
